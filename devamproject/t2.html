@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    .bg {
+        background-image: url("images/ti1.jpg");
+        height: 100vh;
+        width: 100vw;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: aliceblue;
+    }
+
+    .menu {
+        height: 40vh;
+        /* border: 2px solid black; */
+        display: flex;
+        padding-left: 4vw;
+        padding-top: 2vw;
+    }
+
+    .adv {
+        font-size: 24px;
+        width: 80vw;
+    }
+
+    .mbar {
+        display: flex;
+        width: 20vw;
+        font-size: 20px;
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+    }
+
+    ul>li>a {
+        color: aliceblue;
+        text-decoration: none;
+    }
+
+    .contant1 {
+        font-size: 26px;
+    }
+
+    .contant2 {
+        font-size: 22px;
+    }
+
+    .contant3 {
+        font-size: 19px;
+    }
+
+    .form1 {
+        width: 60%;
+        height: 50px;
+        background-color: azure;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        border-radius: 100px;
+    }
+
+    #e {
+        width: 60%;
+        height: 30px;
+        background-color: transparent;
+        border: 0;
+    }
+
+    #bt {
+        width: 20%;
+        height: 30px;
+        border-radius: 100px;
+        border: 0;
+        color: azure;
+        background-color: orange;
+    }
+
+    .headerr {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        font-size: 24px;
+        color: darkblue;
+        font-weight: bolder;
+    }
+
+    .boxs {
+        width: 100vw;
+        height: 50vh;
+        /* border: 2px solid black; */
+        /* overflow: hidden; */
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .box {
+        background-color: rgb(241, 241, 241);
+        height: 98%;
+        width: 20vw;
+        border-radius: 20px;
+        /* border: 2px solid black; */
+    }
+
+    .box1 {
+        height: 40vh;
+        width: 100vw;
+        background-image: url("images/ti2.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        overflow-x: hidden;
+    }
+
+    .box2 {
+        height: 40vh;
+        width: 100vw;
+        background-image: url("images/ti3.jpeg");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .box3 {
+        height: 40vh;
+        width: 100vw;
+        background-image: url("images/ti4.jpeg");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .box4 {
+        height: 40vh;
+        width: 100vw;
+        background-image: url("images/ti5.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .b1 {
+        font-weight: bolder;
+        font-size: 18px;
+        color: darkblue;
+        padding-top: 2vh;
+        ;
+        padding-left: 2vh;
+        ;
+    }
+
+    .adventure {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+    }
+
+    .trip {
+        height: 400px;
+        width: 15%;
+        font-size: 25px;
+        font-weight: bold;
+        color: blue;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .images2 {
+        height: 70%;
+        width: 100%;
+    }
+
+    .bg2 {
+        background-image: url("images/pexels-pok-rie-33563-2049422.jpg");
+        width: 100vw;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .con1 {
+        height: 50vh;
+        width: 30vw;
+        /* border: 2px solid black; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: aliceblue;
+        font-size: 20px;
+    }
+
+    #form2 {
+        background-image: url("images/paper2.jpg");
+        height: 50vh;
+        width: 30vw;
+        /* border: 2px solid black; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-size: contain;
+        color: aliceblue;
+    }
+
+    .imgs {
+        width: 100vw;
+        height: 100vh;
+        /* border: 2px solid black; */
+    }
+
+    .imgs1 {
+        width: 98vw;
+        height: 57vh;
+        /* border: 2px solid black; */
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .imgs2 {
+        width: 98vw;
+        height: 37vh;
+        /* border: 2px solid black; */
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .imgs11 {
+        width: 60vw;
+        /* border: 2px solid black; */
+        border-radius: 20px;
+        background-image: url("images/australia.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        font-size: 50px;
+        font-weight: bold;
+        color: white;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        padding: 20px;
+    }
+
+    .imgs12 {
+        width: 27vw;
+        /* border: 2px solid black; */
+        border-radius: 20px;
+        background-image: url("images/india.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        font-size: 50px;
+        font-weight: bold;
+        color: white;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        padding: 20px;
+    }
+
+    .imgs21 {
+        width: 27vw;
+        /* border: 2px solid black; */
+        border-radius: 20px;
+        background-image: url("images/lama.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        font-size: 50px;
+        font-weight: bold;
+        color: white;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        padding: 20px;
+    }
+
+    .imgs22 {
+        width: 27vw;
+        /* border: 2px solid black; */
+        border-radius: 20px;
+        background-image: url("images/Sydney-Harbour-Australia-Buildings-Bird-View-iphone.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        font-size: 50px;
+        font-weight: bold;
+        color: white;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        padding: 20px;
+    }
+
+    .imgs23 {
+        width: 27vw;
+        /* border: 2px solid black; */
+        border-radius: 20px;
+        background-image: url("images/Waikiki-Beach-Hawaii-iphone.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        font-size: 50px;
+        font-weight: bold;
+        color: white;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        padding: 20px;
+    }
+
+    .bg12 {
+        background-image: url("images/kayaking.jpg");
+        width: 100vw;
+        height: 60vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .divv {
+        height: 35vh;
+        width: 100vw;
+        /* border: 2px solid black; */
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .divvv {
+        height: 34vh;
+        width: 20vw;
+        /* border: 2px solid black; */
+        color: aliceblue;
+        font-size: 20px;
+    }
+
+    .divvv>b {
+        font-size: 24px;
+    }
+
+    .footer {
+        height: 20vh;
+        width: 100vw;
+        /* border: 2px solid silver; */
+        display: flex;
+        /* background-color: whitesmoke; */
+    }
+
+    .f1 {
+        height: 18vh;
+        width: 25vw;
+        border-left: 2px solid silver;
+        color: darkcyan;
+        font-size: 20px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .f1>b {
+        font-size: 24px;
+        color: darkgoldenrod;
+    }
+
+    .last
+    {
+        display: flex;
+        align-items: center;
+        width: 100vw;
+        justify-content: space-around;
+    }
+
+    .adv1
+    {
+        width: 30vw;
+        color:cadetblue;
+        font-size: 24px;
+    }
+
+    .cpy
+    {
+        width: 60vw;
+        color:cadetblue;
+        font-size: 18px;   
+    }
+
+    .naidunga
+    {
+        height: 5vh;
+        width: 10vw;
+        background-color: orange;
+        color: aliceblue;
+        border: 0;
+        border-radius: 20px;
+    }
+
+    .ff
+    {
+        background-color: transparent;
+        border: 0;
+        border-bottom: 2px solid black;
+        color: black;
+        width: 17vw;
+    }
+</style>
+
+<body>
+    <div class="bg">
+        <div class="menu">
+            <div class="adv">
+                <b>GO</b>ADVENTURE
+            </div>
+            <div class="mbar">
+                <ul>
+                    <li><a>Weakly Deal</a></li>
+                    <li><a href="#form2">Login</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="contant">
+            <span class="contant1">
+                <center>
+                    <b>Upto 60% off </b> ADVENTURE TRAVEL
+                </center>
+            </span>
+            <span class="contant2">
+                <br>
+                <center>
+                    Join Over 40,000 Members
+                </center>
+            </span>
+            <span class="contant3">
+                <br>
+                <center>
+                    Get exclusive access on members only Deals on <br>
+                    Amazing ADVENTURE by email
+                </center>
+                <br>
+            </span>
+            <center>
+                <div class="form1">
+                    <input type="email" name="Email" id="e" placeholder=" Enter Your Email">
+                    <input type="button" value="Subscribe" id="bt">
+                </div>
+            </center>
+        </div>
+    </div>
+    <div class="container">
+        <div class="headerr">
+            <center>
+                Recent Deals
+            </center>
+        </div>
+        <div class="boxs">
+            <div class="box">
+                <div class="box1"></div>
+                <div class="b1">
+                    Patagonia Wilderness Trek
+                </div>
+            </div>
+            <div class="box">
+                <div class="box2"></div>
+                <div class="b1">
+                    15-Days Gorilla and chimpanzee
+                </div>
+            </div>
+            <div class="box">
+                <div class="box3"></div>
+                <div class="b1">
+                    Discover Croatia & Itally 2...
+                </div>
+            </div>
+            <div class="box">
+                <div class="box4"></div>
+                <div class="b1">
+                    15-Days Unique Maidives ...
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+    <span style="font-size:24px;color:darkblue;font-weight: bolder;">
+        <center>
+            How It Works
+        </center>
+    </span>
+    <br><br><br>
+    <div class="adventure">
+        <div class="trip"><img src="images/surfing-removebg-preview.png" alt="" class="images2">Handpicked Adventures
+        </div>
+        <div class="trip"><img src="images/deal1.png" alt="" class="images2">Get Exclusive Deals</div>
+        <div class="trip"><img src="images/jeep-removebg-preview.png" alt="" class="images2">Trip that matches your
+            interests</div>
+    </div>
+    <div class="bg2">
+        <div class="con1">
+            <center>
+                <span style="font-weight: bolder;font-style: italic;"> SIGN UP AND SAVE </span>
+                <div></div><br>
+                For The TOP DEALS from the
+                <br>
+                world's BEST tour operators!!!
+                <br>
+                SIGN UP AND NEVER MISS ANOTHER ADVENTURE
+            </center>
+        </div>
+        <div id="form2">
+            <form action="f1.html">
+                Enter First name:<input type="text" class="ff" required> <br><br>
+                Enter Last name:<input type="text" class="ff" required><br><br>
+                Enter Email:<input type="email" class="ff" required><br><br>
+                <button type="submit" class="naidunga">Dabaa Mujhe</button>
+            </form>
+        </div>
+    </div>
+    <br><br>
+    <span style="font-size:24px;color:darkblue;font-weight: bolder;">
+        <center>
+            Popular Destinations
+        </center>
+    </span>
+    <br><br>
+    <div class="imgs">
+        <div class="imgs1">
+            <div class="imgs11">Explore <br>Australia</div>
+            <div class="imgs12">Uncover <br> India</div>
+        </div>
+        <br>
+        <div class="imgs2">
+            <div class="imgs21">Discover <br> Peru</div>
+            <div class="imgs22">Paradise <br> Bali</div>
+            <div class="imgs23">ADVENTURE <br> Hawai</div>
+        </div>
+    </div>
+    <div class="bg12">
+        <br><br>
+        <center>
+            <span style="color: aliceblue; font-size: 24px;">Huge Saving Across 7 Continents</span>
+        </center>
+        <br><br><br>
+        <div class="divv">
+            <div class="divvv">
+                <center>
+                    <b>EARLY BIRD </b>DEALS
+                    <br><br>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates voluptatibus et aut laudantium
+                    minima magnam.
+                </center>
+            </div>
+            <div class="divvv">
+                <center>
+                    <b>LAST MINUTE </b>DEALS
+                    <br><br>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates voluptatibus et aut laudantium
+                    minima magnam.
+                </center>
+            </div>
+            <div class="divvv">
+                <center>
+                    <b>2 FOR 1 </b>DEALS
+                    <br><br>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates voluptatibus et aut laudantium
+                    minima magnam.
+                </center>
+            </div>
+            <div class="divvv">
+                <center>
+                    <b>EXCLUSIVE MEMBERS</b> DEAL
+                    <br><br>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates voluptatibus et aut laudantium
+                    minima magnam.
+                </center>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="footer">
+        <div class="f1">
+            <b>Find Us</b>
+            <br><br>
+            Address Line
+            <br>
+            London UK
+        </div>
+        <div class="f1">
+            <b>Call Us</b>
+            <br><br>
+            +44 2345467
+        </div>
+        <div class="f1">
+            <b>Email Us</b>
+            <br><br>
+            nsjdfnjs@gmail.com
+        </div>
+        <div class="f1">
+            <b>Follow Us</b>
+            <br><br>
+            Be Inspire
+        </div>
+    </div>
+    
+    <center style="color: cadetblue;">
+        Home &nbsp;| &nbsp;The Amazing Deals&nbsp; | &nbsp;Load&nbsp; |&nbsp; Contact&nbsp; |&nbsp; Terms Of Use &nbsp;| &nbsp;Privacy Policy
+    </center>
+    <br>
+    <hr>
+    <br>
+    <center style="color:silver; font-size: 16px;">
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus autem praesentium repudiandae labore dolores nam iusto quas magni! Id, ea delectus quae ex suscipit non commodi ipsam possimus recusandae in perspiciatis consequuntur explicabo itaque incidunt! Non itaque, illo eaque laboriosam, reprehenderit obcaecati, quas architecto unde vel optio assumenda alias corporis quo. Fugiat aperiam accusamus voluptates nam?
+    </center>
+    <br>
+
+    <div class="last">
+        <div class="adv1"><b>GO</b>ADVENTURE</div>
+        <div class="cpy">&copy 2020-2024 GO ADVENTURE, INC, GO ADVENTURE and any associated trademarks or logos.</div>
+    </div>
+
+</body>
+
+</html>

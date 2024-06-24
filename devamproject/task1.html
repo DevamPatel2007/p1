@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin-top: 0;
+            margin-left: 0;
+            margin-right: 0;
+            overflow-x: hidden;
+        }
+        .img1{
+            margin: 0;
+            padding: 0;
+            height: 600px;
+            width: 100%;
+            overflow: hidden;
+            box-sizing: border-box;
+        }    
+        .img1>img
+        {
+            margin: 0;
+            padding: 0;
+            height:100%;
+            width:100%;
+            overflow: hidden;
+        }
+        .pos
+        {
+            position: relative;
+            bottom: 570px;
+            z-index: 1;
+            color:blueviolet;
+        }
+        .menu{
+            display: flex;
+           
+        }
+        ul
+        {
+            list-style: none;
+            display: flex;
+            gap: 50px;
+            width: 20%;
+        }
+        .adv
+        {
+            width: 80%;
+        }
+        .c1
+        {
+            width: 60%;
+            height: 50px;
+            background-color: azure;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            border-radius: 100px;
+        }
+        #e
+        {
+            width: 60%;
+            height: 30px;
+            background-color: transparent;
+            border: 0;
+        }
+        #bt
+        {
+            width: 20%;
+            height: 30px;
+            border-radius: 100px;
+            border: 0;
+            color:azure;
+            background-color: orange;
+        }
+        .container
+        {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            box-sizing: border-box;
+            gap: 50px;
+        }
+        #k1
+        {
+            height: 400px;
+            width: 20%;
+            border: 2px solid silver;
+            border-radius: 20px;
+        }
+        .adventure
+        {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            text-align: center;
+        }
+        .trip
+        {
+            height: 400px;
+            width: 15%;
+            font-size: 20px;
+            /* font-weight: bold; */
+            color: blue;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="img1">
+        <img src="images/banner.png" alt="">
+        <div class="pos">
+            <div class="menu">
+                <div class="adv">
+                    <h1><b>GO</b>ADVANTURE</h1>
+                </div>
+                <ul>
+                    <li>The Wood Deals</li>
+                    <li>Login</li>
+                </ul>
+            </div>
+            <br><br><br><br>
+            <center>
+                <h1 style="display: inline;">Upto 60% off </h1> ADVANTURE TRAVEL
+                <br><br>
+                Join Over 40,000 Members
+                <br><br>
+                Get exclusive access on members only Deals on <br>
+                Amazing ADVANTURE by email
+                <br> <br>
+                <div class="c1">
+                    <input type="email" name="Email" id="e" placeholder=" Enter Your Email">
+                    <input type="button" value="Subscribe" id="bt">
+                </div>
+            </center>
+        </div>
+    </div>
+    <div class="c2">
+        <center>
+                <h1 style="color: blue;">Recent Deals</h1>
+        </center>
+        <div class="container">
+            <div id="k1"><img src="/devamproject/images/boy2.png" alt="" height="70%" width="100%">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, enim.</div>
+            <div id="k1"><img src="/devamproject/images/boy2.png" alt="" height="70%" width="100%">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, enim.</div>
+            <div id="k1"><img src="/devamproject/images/boy2.png" alt="" height="70%" width="100%">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, enim.</div>
+            <div id="k1"><img src="/devamproject/images/boy2.png" alt="" height="70%" width="100%">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, enim.</div>
+        </div>
+    </div>
+    <br><br><br>
+    <div style="text-align: center;font-size: 20px;font-weight: bold;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;color: blue;">How It Works</div>
+    <div class="adventure">
+        <div class="trip"><img src="images/surfing-removebg-preview.png" alt="" class="images2" width="100%">Handpicked Adventures</div>
+        <div class="trip"><img src="images/jeep-removebg-preview.png" alt="" class="images2">Get Exclusive Deals</div>
+        <div class="trip"><img src="images/jeep-removebg-preview.png" alt="" class="images2">Trip that matches your interests</div>
+    </div>
+</body>
+</html>
